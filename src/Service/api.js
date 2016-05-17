@@ -8,7 +8,7 @@ export default function wikiApi(term) {
 		}).then(function(json) {
 			let article = {};
 			let results = json.query.pages;
-			for (var i in results) {
+			for (let i in results) {
 				if (i > 0) {
 					let result = results[i];
 					article.title = result.title;
