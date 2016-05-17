@@ -93,7 +93,7 @@ let TmwWiki = React.createClass({
       });
     },
   search: function(){
-    let articleTitle = _.capitalize(this.state.query);
+    let articleTitle = _.capitalize(this.state.query).replace(' ', '|');
     this.setState({
       isLoading: true
     });
