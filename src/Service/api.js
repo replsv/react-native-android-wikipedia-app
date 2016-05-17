@@ -1,6 +1,6 @@
-var apiWiki = 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&titles=';
+let apiWiki = 'https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&titles=';
 
-module.exports = function(term) {
+export default function wikiApi(term) {
 	return fetch(apiWiki + term).then(function(response) {
 		return response.json();
 	}).then(function(json) {

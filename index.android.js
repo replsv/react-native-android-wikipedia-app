@@ -9,9 +9,8 @@ let React = require('react');
 let ReactNative = require('react-native');
 let GiftedSpinner = require('react-native-gifted-spinner');
 let _ = require('lodash');
-let wikiApi = require("./src/Service/api.js");
-let ScrollableView = require('react-native-scrollable-view');
 let HTMLView = require('react-native-htmlview');
+import wikiApi from "./src/Service/api.js";
 
 let {
   AppRegistry,
